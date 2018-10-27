@@ -1,6 +1,6 @@
 {
     "name": "alexgodbehere/laravelfeatures",
-    "description": ":description",
+    "description": "A package to manage free and premium features of SaaS Laravel applications.",
     "license": "GPL-3.0-only",
     "authors": [
         {
