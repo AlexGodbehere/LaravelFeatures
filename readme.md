@@ -115,9 +115,9 @@ if (Feature::can('FeatureName') {
 
 *Note: the `can()` function takes an optional second argument `isPremium` to force the check to pass. This is used for testing only and is disabled for production environments.*
 
-Alternatively, check if the user isn't able to use a feature by using the `Feature::cant()` facade.
+Alternatively, check if the user isn't able to use a feature by using the `Feature::cannot()` facade.
 ```
-if (Feature::cant('FeatureName') {
+if (Feature::cannot('FeatureName') {
     // Code here
 }
 ```
