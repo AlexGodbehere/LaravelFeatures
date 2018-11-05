@@ -117,7 +117,7 @@ if (Feature::can('FeatureName') {
 
 Alternatively, check if the user isn't able to use a feature by using the `Feature::cannot()` facade.
 ```
-if (Feature::cant('FeatureName') {
+if (Feature::cannot('FeatureName') {
     // Code here
 }
 ```
