@@ -39,4 +39,9 @@
 
 			return !self::can($featureName, $isPremium);
 		}
+
+		public static function description ($featureName) {
+
+			return Feature::where('name', '=', $featureName)->first()->description;
+		}
 	}

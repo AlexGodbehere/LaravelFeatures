@@ -341,4 +341,12 @@
 				'--premium' => 'true'])->expectsQuestion('Enter a short description of the feature', 'testing');
 			$this->assertTrue(Feature::cannot('NewFeature'));
 		}
+
+		/** @test */
+		public function a_user_can_get_the_description_of_a_feature () {
+
+			$this->artisan('feature:add', [
+				'feature' => 'NewFeature'])->expectsQuestion('Enter a short description of the feature', 'testing');
+			$this->assertEquals('testing', Feature::description('NewFeature'));
+		}
 	}

@@ -64,7 +64,8 @@ class LaravelFeaturesServiceProvider extends ServiceProvider
 			ListFeatures::class,
 			ResetFeature::class,
 			ResetAllFeatures::class,
-			ShowFeatureUsage::class
+			ShowFeatureUsage::class,
+			GetFeatureDescription::class
 		]);
     }
 }
