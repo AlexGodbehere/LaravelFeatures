@@ -34,7 +34,7 @@
 
             // Handle cases where the user is a guest
             if (!Auth::check()) {
-                !$feature->premium;
+                return !$feature->premium;
             }
 
 			// Return true if the user is premium or the feature is free.
