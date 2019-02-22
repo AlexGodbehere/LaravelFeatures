@@ -3,8 +3,9 @@
 	namespace AlexGodbehere\LaravelFeatures;
 
 	use Illuminate\Database\Eloquent\Model;
+    use Illuminate\Support\Facades\Auth;
 
-	class Feature extends Model {
+    class Feature extends Model {
 
 		protected $table = 'features';
 
@@ -30,6 +31,11 @@
 				// Return true if the user is premium or the feature is free.
 				return $isPremium || !$feature->premium;
 			}
+
+            // Handle cases where the user is a guest
+            if (!Auth::check()) {
+                !$feature->premium;
+            }
 
 			// Return true if the user is premium or the feature is free.
 			return auth()->user()->isPremium || !$feature->premium;
