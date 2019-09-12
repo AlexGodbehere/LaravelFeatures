@@ -12,7 +12,7 @@
     "homepage": "https://github.com/alexgodbehere/laravelfeatures",
     "keywords": ["Laravel", "LaravelFeatures"],
     "require": {
-        "illuminate/support": "~^6.0"
+        "illuminate/support": "^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
