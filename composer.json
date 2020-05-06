@@ -1,43 +1,46 @@
 {
-    "name": "alexgodbehere/laravelfeatures",
-    "description": "A package to manage free and premium features of SaaS Laravel applications.",
-    "license": "GPL-3.0-only",
-    "authors": [
-        {
-            "name": "Alex Godbehere",
-            "email": "alex.godbehere@gmail.com",
-            "homepage": "https://github.com/AlexGodbehere"
-        }
-    ],
-    "homepage": "https://github.com/alexgodbehere/laravelfeatures",
-    "keywords": ["Laravel", "LaravelFeatures"],
-    "require": {
-        "illuminate/support": "^6.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~7.0",
-        "mockery/mockery": "^1.1",
-        "orchestra/testbench": "~3.0",
-        "sempro/phpunit-pretty-print": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "AlexGodbehere\\LaravelFeatures\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "AlexGodbehere\\LaravelFeatures\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "AlexGodbehere\\LaravelFeatures\\LaravelFeaturesServiceProvider"
-            ],
-            "aliases": {
-                "LaravelFeatures": "AlexGodbehere\\LaravelFeatures\\Facades\\LaravelFeatures"
-            }
-        }
+  "name": "alexgodbehere/laravelfeatures",
+  "description": "A package to manage free and premium features of SaaS Laravel applications.",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Alex Godbehere",
+      "email": "alex.godbehere@gmail.com",
+      "homepage": "https://github.com/AlexGodbehere"
     }
+  ],
+  "homepage": "https://github.com/alexgodbehere/laravelfeatures",
+  "keywords": [
+    "Laravel",
+    "LaravelFeatures"
+  ],
+  "require": {
+    "illuminate/support": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0",
+    "mockery/mockery": "^1.1",
+    "orchestra/testbench": "~3.0",
+    "sempro/phpunit-pretty-print": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AlexGodbehere\\LaravelFeatures\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AlexGodbehere\\LaravelFeatures\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AlexGodbehere\\LaravelFeatures\\LaravelFeaturesServiceProvider"
+      ],
+      "aliases": {
+        "LaravelFeatures": "AlexGodbehere\\LaravelFeatures\\Facades\\LaravelFeatures"
+      }
+    }
+  }
 }
