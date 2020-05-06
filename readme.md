@@ -1,5 +1,7 @@
 # LaravelFeatures
 
+**THIS PACKAGE IS NOW DEPRECIATED**
+
 
 **Laravel Features** is a package for Laravel 5.7+ that allows you to easily manange and toggle application features. Its primary purpose is to provide a facade to check if a feature is accessible by free or premium users, however it also supports the enabling and disabling of features.
 
